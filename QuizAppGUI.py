@@ -9,13 +9,14 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+import quiz
 from quiz import random_question
 
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1280, 720)
+        Dialog.resize(800, 600)
         self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName("verticalLayout")
 
@@ -40,7 +41,9 @@ class Ui_Dialog(object):
         self.Answer.setObjectName("Answer")
         self.verticalLayout.addWidget(self.Answer)
 
-        self.ShowAnswerButton = QtWidgets.QPushButton(Dialog)
+        self.ShowAnswerButton = QtWidgets.QPushButton(
+            Dialog, clicked=lambda: self.ShowAnswer()
+        )
         self.ShowAnswerButton.setObjectName("ShowAnswerButton")
         self.verticalLayout.addWidget(self.ShowAnswerButton)
 
@@ -65,6 +68,12 @@ class Ui_Dialog(object):
     def ShowRandomQuestion(self):
         """Показать случайный вопрос по нажатию кнопки"""
         self.Question.setText(random_question)
+
+    def ShowAnswer(self):
+        if "Что такое Middleware?" in random_question:
+            self.Answer.setText(
+                "Middleware — это промежуточное программное обеспечение, которое располагается между приложением и сетевыми службами. Основная цель middleware — обработка запросов и ответов между клиентом и сервером."
+            )
 
 
 if __name__ == "__main__":
