@@ -43,17 +43,20 @@ class Ui_Dialog(object):
         self.Answer.setObjectName("Answer")
         self.verticalLayout.addWidget(self.Answer)
 
-        self.ShowAnswerButton = QtWidgets.QPushButton(
-            Dialog, clicked=lambda: self.ShowAnswer()
-        )
-        self.ShowAnswerButton.setObjectName("ShowAnswerButton")
-        self.verticalLayout.addWidget(self.ShowAnswerButton)
-
         self.ShowRandomQuestionButton = QtWidgets.QPushButton(
             Dialog, clicked=lambda: self.ShowRandomQuestion()
         )
         self.ShowRandomQuestionButton.setObjectName("ShowRandomQuestionButton")
         self.verticalLayout.addWidget(self.ShowRandomQuestionButton)
+
+        if self.ShowRandomQuestionButton.clicked:
+            self.ShowAnswerButton = QtWidgets.QPushButton(
+                Dialog, clicked=lambda: self.ShowAnswer()
+            )
+            self.ShowAnswerButton.setObjectName("ShowAnswerButton")
+            self.verticalLayout.addWidget(self.ShowAnswerButton)
+        else:
+            self.ShowAnswerButton.hide()
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
