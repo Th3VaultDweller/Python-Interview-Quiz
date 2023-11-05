@@ -10,7 +10,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 import quiz
-
 # вопросы и ответы будут дублироваться в консоли
 from quiz import random_question
 
