@@ -75,6 +75,7 @@ class Ui_Dialog(object):
         self.Question.setText(random_question)
 
     def ShowAnswer(self):
+        """Показать ответ на случайный вопрос по нажатию кнопки"""
         if "Что такое Middleware?" in random_question:
             self.Answer.setText(
                 "Middleware — это промежуточное программное обеспечение, которое располагается между приложением и сетевыми службами. \nОсновная цель middleware — обработка запросов и ответов между клиентом и сервером."
