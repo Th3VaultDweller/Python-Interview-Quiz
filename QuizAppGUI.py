@@ -140,7 +140,7 @@ class Ui_Dialog(object):
             "Какие есть шесть этапов разработки продукта в Software Development lifecycle и какая разница между Agile и Kanban?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         if (
             "Какие есть методы HTTP-запросов и какая между ними разница?"
             in random_question
@@ -150,50 +150,50 @@ class Ui_Dialog(object):
             )
 
         if "Что такое авторизация и как она работает?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое cookies?" in random_question:
             self.Answer.setText(
                 "Куки (cookies) — это хранящиеся на компьютерах и гаджетах небольшие файлы, c помощью которых сайт запоминает информацию о посещениях пользователя. Благодаря кукам при каждом посещении того или иного ресурса не нужно вводить регистрационные данные — браузер их подгружает самостоятельно. Поэтому нагрузка не сервер не возрастает и повышается скорость открытия веб-страниц. Сами по себе куки не опасны — это обычные текстовые файлы. Они не могут запускать какие-либо процессы на компьютере и каким-то образом влиять на работу операционной системы."
             )
         if "Что такое веб-уязвимость?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         if "Какие знаете классические базы данных?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         if (
             "Как читать спецификацию в конкретном языке (например, PEP8 в Python)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         if "Как происходит взаимодействие клиента и сервера?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие есть подходы к проектированию API?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как использовать паттерны программирования?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое Acceptance Testing и зачем его используют?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое модульные и интеграционные тесты, API-тесты?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как писать unit-тесты?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие есть best practices в написании автотестов?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие базовые команды системы контроля версий?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как использовать Git?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "В чем разница между хешированием и шифрованием?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         # Python
         if "Python - интерпретируемый язык или компилируемый?" in random_question:
             self.Answer.setText(
@@ -221,40 +221,40 @@ class Ui_Dialog(object):
             )
 
         if "Разница между __init __ () и __new __ ()?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "В чем разница между потоками и процессами?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие есть виды импорта?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое класс, итератор, генератор?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое метакласс, переменная цикла?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "В чем разница между итераторами и генераторами?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "В чем разница между staticmethod и classmethod?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как работают декораторы, контекстные менеджеры?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Как работают dict comprehension, list comprehension и set comprehension?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Можно ли использовать несколько декораторов для одной функции?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Можно ли создать декоратор из класса?" in random_question:
             self.Answer.setText(
@@ -265,7 +265,7 @@ class Ui_Dialog(object):
             "Какие есть основные популярные пакеты (requests, pytest, etc)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое lambda-функции?" in random_question:
             self.Answer.setText(
@@ -273,136 +273,136 @@ class Ui_Dialog(object):
             )
 
         if "Что означает *args, **kwargs и как они используются?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое exceptions, <try-except>?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Что такое PEP (Python Enhancement Proposal), какие из них знаете (PEP 8, PEP 484)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Какие есть типы данных и какая разница между list и tuple, зачем они?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Как использовать встроенные коллекции (list, set, dictionary)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "В чем заключается сложность доступа к элементам dict?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Как создается объект в Python, для чего __new__, зачем __init__?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Что такое шаблонизатор и как в нем выполнять базовые операции (объединять участки шаблона, выводить дату, выводить данные с серверной стороны)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как Python работает с HTTP-сервером?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что происходит, когда создается виртуальная среда?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое модель памяти Python?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Что такое SQLAlchemy (Core и ORM частей) и какие есть альтернативы?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Принципы работы и механизм Garbage collection, reference counting?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как работает thread locals?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое _slots_?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Как передаются аргументы функций в Python (by value or reference)?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое type annotation?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Для чего используют нижние подчеркивания в именах классов?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Каким образом можно запустить код на Python параллельно?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как работать с stdlib?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое дескрипторы?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         # Базы данных
         if (
             "Какие есть базовые методы работы с SQL- базой данных в Python?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Что такое SQL-транзакция?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как сделать выборку из SQL-базы с простой агрегацией?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Как выглядит запрос, который выполняет JOIN между таблицами и к самим себе?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как отправлять запросы в SQL-базу данных без ORM?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Разница между SQL и NoSQL?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как оптимизировать SQL-запросы?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие есть уровни изоляции транзакций?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Какие есть виды индексов?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if (
             "Работали ли с Docker-контейнерами, объяснить основные термины K8s (кластер, pod, node, deployment, service), что такое Kibana?"
             in random_question
         ):
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
         # Алгоритмы
         if "Что такое алгоритмы (например, Big-O notation)?" in random_question:
             self.Answer.setText(
@@ -435,10 +435,10 @@ class Ui_Dialog(object):
             )
 
         if "Как написать, задеплоить и поддерживать (микро) сервис?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как масштабировать API?" in random_question:
-            self.Answer.setText("")
+            self.Answer.setText("Ответ пока не добавлен.")
 
         if "Как проводить Code review?" in random_question:
             self.Answer.setText(
