@@ -110,7 +110,7 @@ class Ui_Dialog(object):
             )
         # Общие вопросы по Computer Science и Web Development
         if "Что такое инженерия и процесс разработки в целом?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
         if "Какие знаете принципы программирования?" in random_question:
             self.Answer.setText(
                 "1. KISS - Keep It Simple, Stupid. особенно важен для проектов средней сложности. Если вы думаете, что упростили достаточно, упростите код еще на один уровень, но не забывайте начинать с малого, чтобы не создать целую гору проблем.\n2. DRY - Dont Repeat Yorself. Принцип „отсутствия повторов” имеет решающее значение при написании чистого и легко изменяемого кода. При написании кода следует избегать дублирования данных и логики. Если вы заметили, что один и тот же фрагмент кода написан снова и снова, принцип был нарушен. Противоположностью DRY-кода является WET код: «дублируйте». Один из лучших способов диагностики WET-кода – спросить себя: чтобы каким-то образом изменить поведение программы, сколько областей кода нужно было бы изменить?\n3. Open/Closed - код должен быть открытым для внедрения новых областей, но закрытым для изменений, не зависимо от того, пишете вы объекты на Java или модули на Python. Это относится ко всем видам проектов, но этот принцип особенно важен при выпуске библиотек или структур, предназначенных для использования другими пользователями.\n4. Принцип единой ответственности - каждый класс или модуль в программе должен заниматься только одним набором конкретных функций.Классы и модули создаются по этому принципу, но поскольку расширяется функционал, они превращаются с течением времени в классы и модули, которые „могут все” и занимают сотни или даже тысячи строк кода. Если такое произошло, нужно разбить их на более мелкие классы и модули.\n5. Разделение интересов - это принцип единой ответственности, но на более абстрактном уровне. По сути, программа должна быть спроектирована таким образом, чтобы она имела много разных не перекрывающихся инкапсуляций, и эти инкапсуляции не должны взаимодействовать друг с другом.\n6. YAGNI - основывается на том, что вам никогда не нужно реализовывать какую-либо функциональность, которая возможно вам понадобится в будущем. Скорее всего, вам это не понадобится, и это будет пустая трата времени, это также усложнит ваш код. Часто неопытные программисты пытаются написать наиболее абстрактный и общий код, чтобы избежать WET код, но слишком большая абстракция заканчивается тем, что его невозможно поддерживать в будущем. Хитрость заключается в том, чтобы применять принцип DRY только тогда, когда вам нужно.\n7. Избежание преждевременной оптимизации - принцип избежания преждевременной оптимизации не похож на принцип YAGNI. Разница в том, что YAGNI предотвращает внедрение функций до того, как они понадобятся, в то время как принцип избежания преждевременной оптимизации направлен на предотвращение оптимизации  работы алгоритмов, прежде чем это будет необходимо. Проблема с преждевременной оптимизацией заключается в том, что вы никогда не сможете узнать, где будут проблемы в программе до тех пор, пока они не проявятся. Разумеется, вы можете догадаться, и иногда вы даже можете быть правы. Но чаще всего вы будете тратить драгоценное время, пытаясь ускорить процессы, которые не так уж и медленны, как вы думаете. \n8. Рефакторинг - одна из самых сложных истин для неопытного программиста заключается в том, что очень редко с первого раза все заработает. Вы можете подумать, что написали идеальный код, реализуя определенную функцию, но по мере того, как ваша программа будет усложняться, написание будущих функций может быть довольно сложным, так как вы реализовали определенную функцию на ранней стадии. Кодовые базы постоянно развиваются. Совершенно нормально пересматривать, переписывать или даже перепроектировать целые фрагменты кода – и это не просто нормально, это правильно. Ведь позже вы будете знать больше о специфике вашего проекта, чем в начале его создания, поэтому вы должны постоянно реорганизовывать свой старый код. И не откладывайте это место на потом. Как только вы поняли, что где-то есть ошибка, не откладывайте ее исправление.  Если вам когда-нибудь понадобится проверить или исправить старый код, постарайтесь улучшить его и сделать более чистым и аккуратным.\n9. Чистый код > Умный код - говоря о чистом коде, оставьте где-то далеко своё этот „умный” код. Под умным кодом подразумевается тип кода, который больше похож на загадку, чем на решение, и существует только для того, чтобы показать, насколько вы умны. На самом деле, никого это не волнует. Примером „умного кода” будет вместить как можно больше логики в одну строку. Другим примером является использование специфических особенностей языка для написания странных, но работающих операций. Примером умного кода будет все то, что может заставить кого-то сказать «Погоди, что это?» при просмотре вашего кода. Хороший программист и читаемый код идут рука об руку. Делайте комментарии при такой необходимости. Придерживайтесь определенного стиля, независимо от того, диктуется ли он языком (например, Python) или компанией (например, Google). Наблюдайте за языковыми идиомами и прекратите писать Java-код на Python или наоборот."
@@ -140,7 +140,7 @@ class Ui_Dialog(object):
             "Какие есть шесть этапов разработки продукта в Software Development lifecycle и какая разница между Agile и Kanban?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
         if (
             "Какие есть методы HTTP-запросов и какая между ними разница?"
             in random_question
@@ -150,50 +150,50 @@ class Ui_Dialog(object):
             )
 
         if "Что такое авторизация и как она работает?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое cookies?" in random_question:
             self.Answer.setText(
                 "Куки (cookies) — это хранящиеся на компьютерах и гаджетах небольшие файлы, c помощью которых сайт запоминает информацию о посещениях пользователя. Благодаря кукам при каждом посещении того или иного ресурса не нужно вводить регистрационные данные — браузер их подгружает самостоятельно. Поэтому нагрузка не сервер не возрастает и повышается скорость открытия веб-страниц. Сами по себе куки не опасны — это обычные текстовые файлы. Они не могут запускать какие-либо процессы на компьютере и каким-то образом влиять на работу операционной системы."
             )
         if "Что такое веб-уязвимость?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
         if "Какие знаете классические базы данных?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
         if (
             "Как читать спецификацию в конкретном языке (например, PEP8 в Python)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
         if "Как происходит взаимодействие клиента и сервера?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие есть подходы к проектированию API?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как использовать паттерны программирования?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое Acceptance Testing и зачем его используют?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое модульные и интеграционные тесты, API-тесты?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как писать unit-тесты?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие есть best practices в написании автотестов?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие базовые команды системы контроля версий?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как использовать Git?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "В чем разница между хешированием и шифрованием?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
         # Python
         if "Python - интерпретируемый язык или компилируемый?" in random_question:
             self.Answer.setText(
@@ -221,40 +221,40 @@ class Ui_Dialog(object):
             )
 
         if "Разница между __init __ () и __new __ ()?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "В чем разница между потоками и процессами?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие есть виды импорта?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое класс, итератор, генератор?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое метакласс, переменная цикла?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "В чем разница между итераторами и генераторами?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "В чем разница между staticmethod и classmethod?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как работают декораторы, контекстные менеджеры?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Как работают dict comprehension, list comprehension и set comprehension?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Можно ли использовать несколько декораторов для одной функции?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Можно ли создать декоратор из класса?" in random_question:
             self.Answer.setText(
@@ -265,7 +265,7 @@ class Ui_Dialog(object):
             "Какие есть основные популярные пакеты (requests, pytest, etc)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое lambda-функции?" in random_question:
             self.Answer.setText(
@@ -273,136 +273,136 @@ class Ui_Dialog(object):
             )
 
         if "Что означает *args, **kwargs и как они используются?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое exceptions, <try-except>?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Что такое PEP (Python Enhancement Proposal), какие из них знаете (PEP 8, PEP 484)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Какие есть типы данных и какая разница между list и tuple, зачем они?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Как использовать встроенные коллекции (list, set, dictionary)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "В чем заключается сложность доступа к элементам dict?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Как создается объект в Python, для чего __new__, зачем __init__?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Что такое шаблонизатор и как в нем выполнять базовые операции (объединять участки шаблона, выводить дату, выводить данные с серверной стороны)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как Python работает с HTTP-сервером?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что происходит, когда создается виртуальная среда?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое модель памяти Python?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Что такое SQLAlchemy (Core и ORM частей) и какие есть альтернативы?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Принципы работы и механизм Garbage collection, reference counting?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как работает thread locals?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое _slots_?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Как передаются аргументы функций в Python (by value or reference)?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое type annotation?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Для чего используют нижние подчеркивания в именах классов?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Каким образом можно запустить код на Python параллельно?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как работать с stdlib?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое дескрипторы?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
         # Базы данных
         if (
             "Какие есть базовые методы работы с SQL- базой данных в Python?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Что такое SQL-транзакция?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как сделать выборку из SQL-базы с простой агрегацией?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Как выглядит запрос, который выполняет JOIN между таблицами и к самим себе?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как отправлять запросы в SQL-базу данных без ORM?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Разница между SQL и NoSQL?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как оптимизировать SQL-запросы?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие есть уровни изоляции транзакций?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Какие есть виды индексов?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if (
             "Работали ли с Docker-контейнерами, объяснить основные термины K8s (кластер, pod, node, deployment, service), что такое Kibana?"
             in random_question
         ):
-            self.Answer.setText()
+            self.Answer.setText("")
         # Алгоритмы
         if "Что такое алгоритмы (например, Big-O notation)?" in random_question:
             self.Answer.setText(
@@ -435,10 +435,10 @@ class Ui_Dialog(object):
             )
 
         if "Как написать, задеплоить и поддерживать (микро) сервис?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как масштабировать API?" in random_question:
-            self.Answer.setText()
+            self.Answer.setText("")
 
         if "Как проводить Code review?" in random_question:
             self.Answer.setText(
