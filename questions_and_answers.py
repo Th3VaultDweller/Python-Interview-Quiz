@@ -179,4 +179,6 @@ questions_and_answers = [
     },
 ]
 
-questions_and_answers = random.choice(questions_and_answers)
+randomised_q_and_a = str(random.choice(questions_and_answers))
+
+print(randomised_q_and_a)
