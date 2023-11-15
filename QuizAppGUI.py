@@ -11,11 +11,8 @@ import random
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-import quiz
-
 # вопросы и ответы будут дублироваться в консоли
-# from quiz import questions, random_question
-from questions_and_answers import answer, question
+from questions_and_answers import questions_and_answers
 
 
 class Ui_Dialog(object):
@@ -25,11 +22,6 @@ class Ui_Dialog(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName("verticalLayout")
 
-        self.ChangeLanguageButton = QtWidgets.QToolButton(Dialog)
-        self.ChangeLanguageButton.setAcceptDrops(False)
-        self.ChangeLanguageButton.setObjectName("ChangeLanguageButton")
-        self.verticalLayout.addWidget(self.ChangeLanguageButton)
-
         self.Question = QtWidgets.QLabel(Dialog)
         self.Question.setMouseTracking(False)
         self.Question.setAutoFillBackground(True)
@@ -38,25 +30,11 @@ class Ui_Dialog(object):
         self.Question.setObjectName("Question")
         self.verticalLayout.addWidget(self.Question)
 
-        self.Answer = QtWidgets.QLabel(Dialog)
-        self.Answer.setAutoFillBackground(True)
-        self.Answer.setScaledContents(False)
-        self.Answer.setWordWrap(True)
-        self.Answer.setOpenExternalLinks(True)
-        self.Answer.setObjectName("Answer")
-        self.verticalLayout.addWidget(self.Answer)
-
         self.ShowRandomQuestionButton = QtWidgets.QPushButton(
-            Dialog, clicked=lambda: self.ShowRandomQuestion()
+            Dialog, clicked=lambda: self.ShowRandomQuestionAndAnswer()
         )
         self.ShowRandomQuestionButton.setObjectName("ShowRandomQuestionButton")
         self.verticalLayout.addWidget(self.ShowRandomQuestionButton)
-
-        self.ShowAnswerButton = QtWidgets.QPushButton(
-            Dialog, clicked=lambda: self.ShowAnswer()
-        )
-        self.ShowAnswerButton.setObjectName("ShowAnswerButton")
-        self.verticalLayout.addWidget(self.ShowAnswerButton)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -64,19 +42,15 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.ChangeLanguageButton.setText(_translate("Dialog", "Язык приложения"))
+
         self.Question.setText(_translate("Dialog", "Вопрос"))
-        self.Answer.setText(_translate("Dialog", "Ответ"))
-        self.ShowAnswerButton.setText(_translate("Dialog", "Показать ответ"))
+
         self.ShowRandomQuestionButton.setText(_translate("Dialog", "Случайный вопрос"))
 
-    def ShowRandomQuestion(self):
+    def ShowRandomQuestionAndAnswer(self):
         """Показать случайный вопрос по нажатию кнопки"""
-        self.Question.setText(question)
-
-    def ShowAnswer(self):
-        """Показать ответ на случайный вопрос по нажатию кнопки"""
-        self.Answer.setText(answer)
+        question, answer = random.choice(list(questions_and_answers.items()))
+        self.Question.setText(f"{question}\n\n{answer}")
 
 
 if __name__ == "__main__":
