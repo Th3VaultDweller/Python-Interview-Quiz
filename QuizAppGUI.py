@@ -24,10 +24,10 @@ class Ui_Dialog(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName("verticalLayout")
 
-        self.ChangeLanguageButton = QtWidgets.QToolButton(Dialog)
-        self.ChangeLanguageButton.setAcceptDrops(False)
-        self.ChangeLanguageButton.setObjectName("ChangeLanguageButton")
-        self.verticalLayout.addWidget(self.ChangeLanguageButton)
+        # self.ChangeLanguageButton = QtWidgets.QToolButton(Dialog)
+        # self.ChangeLanguageButton.setAcceptDrops(False)
+        # self.ChangeLanguageButton.setObjectName("ChangeLanguageButton")
+        # self.verticalLayout.addWidget(self.ChangeLanguageButton)
 
         self.Question = QtWidgets.QLabel(Dialog)
         self.Question.setMouseTracking(False)
@@ -37,13 +37,13 @@ class Ui_Dialog(object):
         self.Question.setObjectName("Question")
         self.verticalLayout.addWidget(self.Question)
 
-        self.Answer = QtWidgets.QLabel(Dialog)
-        self.Answer.setAutoFillBackground(True)
-        self.Answer.setScaledContents(False)
-        self.Answer.setWordWrap(True)
-        self.Answer.setOpenExternalLinks(True)
-        self.Answer.setObjectName("Answer")
-        self.verticalLayout.addWidget(self.Answer)
+        # self.Answer = QtWidgets.QLabel(Dialog)
+        # self.Answer.setAutoFillBackground(True)
+        # self.Answer.setScaledContents(False)
+        # self.Answer.setWordWrap(True)
+        # self.Answer.setOpenExternalLinks(True)
+        # self.Answer.setObjectName("Answer")
+        # self.verticalLayout.addWidget(self.Answer)
 
         self.ShowRandomQuestionButton = QtWidgets.QPushButton(
             Dialog, clicked=lambda: self.ShowRandomQuestion()
@@ -51,11 +51,11 @@ class Ui_Dialog(object):
         self.ShowRandomQuestionButton.setObjectName("ShowRandomQuestionButton")
         self.verticalLayout.addWidget(self.ShowRandomQuestionButton)
 
-        self.ShowAnswerButton = QtWidgets.QPushButton(
-            Dialog, clicked=lambda: self.ShowAnswer()
-        )
-        self.ShowAnswerButton.setObjectName("ShowAnswerButton")
-        self.verticalLayout.addWidget(self.ShowAnswerButton)
+        # self.ShowAnswerButton = QtWidgets.QPushButton(
+        #     Dialog, clicked=lambda: self.ShowAnswer()
+        # )
+        # self.ShowAnswerButton.setObjectName("ShowAnswerButton")
+        # self.verticalLayout.addWidget(self.ShowAnswerButton)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -63,10 +63,10 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.ChangeLanguageButton.setText(_translate("Dialog", "Язык приложения"))
+        # self.ChangeLanguageButton.setText(_translate("Dialog", "Язык приложения"))
         self.Question.setText(_translate("Dialog", "Вопрос"))
-        self.Answer.setText(_translate("Dialog", "Ответ"))
-        self.ShowAnswerButton.setText(_translate("Dialog", "Показать ответ"))
+        # self.Answer.setText(_translate("Dialog", "Ответ"))
+        # self.ShowAnswerButton.setText(_translate("Dialog", "Показать ответ"))
         self.ShowRandomQuestionButton.setText(_translate("Dialog", "Случайный вопрос"))
 
     def ShowRandomQuestion(self):
@@ -74,19 +74,7 @@ class Ui_Dialog(object):
         random_question = random.choice(questions)
         self.Question.setText(random_question)
 
-    def ShowAnswer(self):
-        """Показать ответ на случайный вопрос по нажатию кнопки"""
-        if "Что такое Middleware?" in random_question:
-            self.Answer.setText(
-                "Middleware — это промежуточное программное обеспечение, которое располагается между приложением и сетевыми службами. \nОсновная цель middleware — обработка запросов и ответов между клиентом и сервером."
-            )
-        if (
-            "Какая разница в быстродействии между Django и Flask и почему?"
-            in random_question
-        ):
-            self.Answer.setText(
-                "Django чуть медленнее Flask из-за своей более высокой функциональности и накладных расходов. Однако на практике разница в скорости работы между ними незначительна для большинства веб-приложений.\nFlask может быть немного быстрее при обработке простых запросов, но Django лучше масштабируется при увеличении нагрузки благодаря встроенным инструментам кэширования и оптимизации.\nКроме того, производительность в большей степени зависит от архитектуры и качества кода конкретного приложения."
-            )
+
 if __name__ == "__main__":
     import sys
 
