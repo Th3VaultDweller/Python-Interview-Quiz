@@ -48,7 +48,7 @@ class Ui_Dialog(object):
         self.ShowRandomQuestionButton.setText(_translate("Dialog", "Случайный вопрос"))
 
     def ShowRandomQuestionAndAnswer(self):
-        """Показать случайный вопрос по нажатию кнопки"""
+        """Показать случайный вопрос и ответ по нажатию кнопки"""
         question, answer = random.choice(list(questions_and_answers.items()))
         self.Question.setText(f"{question}\n\n{answer}")
 
